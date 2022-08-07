@@ -5,6 +5,9 @@
   "bin": {
     "cdk-eb-infra": "bin/cdk-eb-infra.js"
   },
+  "engines": {
+    "node": "14.17.2"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",

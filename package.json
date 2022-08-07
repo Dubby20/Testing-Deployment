@@ -1,6 +1,7 @@
 {
   "name": "cdk-eb-infra",
   "version": "0.1.0",
+  "main": "app.js",
   "bin": {
     "cdk-eb-infra": "bin/cdk-eb-infra.js"
   },
@@ -8,8 +9,11 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "start": "node app.js"
   },
+  "author": "Jacinta",
+  "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "10.17.27",
@@ -21,8 +25,12 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
+    "@aws-cdk/aws-elasticbeanstalk": "^1.167.0",
+    "@aws-cdk/aws-iam": "^1.167.0",
+    "@aws-cdk/aws-s3-assets": "^1.167.0",
     "aws-cdk-lib": "2.35.0",
     "constructs": "^10.0.0",
+    "express": "^4.18.1",
     "source-map-support": "^0.5.21"
   }
 }
